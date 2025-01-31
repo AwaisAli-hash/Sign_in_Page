@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #093545;
+}
+.container {
+  background-image: url(../images/Vectors.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SignIn_form_header {
+  text-align: center;
+  color: #fff;
+}
+.SignIn_form_header h1 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 40px;
+}
+.SignIn_form_header p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+}
+.SignIn_form_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.SignIn_form_input input {
+  width: 250px;
+  height: 45px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #224957;
+  color: #fff;
+  outline: none;
+  margin-bottom: 10px;
+}
+.SignIn_form_input input::placeholder {
+  color: #fff;
+}
+.forgotpassword {
+  display: flex;
+  justify-content: space-between;
+}
+.forgotpassword input[type="checkbox"] {
+  display: none;
+}
+
+.forgotpassword a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #20df7f;
+  text-decoration: none;
+}
+.rememberme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login {
+  width: 282px;
+  height: 45px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #20df7f;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.darkmode {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}
+
+/* ============================== */
+/* Create a custom checkbox */
+.container-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #224957;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #224957;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #224957;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ============================== */
